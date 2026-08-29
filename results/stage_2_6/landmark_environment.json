@@ -1,0 +1,17 @@
+{
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "mediapipe": "0.10.14",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "formula_components": [
+    "g_total",
+    "g_eye",
+    "g_mouth",
+    "g_contour",
+    "eye_ratio_change",
+    "mouth_ratio_change",
+    "face_ratio_change"
+  ],
+  "weights": "equal after RMS scaling",
+  "n_images": 68
+}

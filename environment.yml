@@ -1,0 +1,25 @@
+name: ipm-face-editing-eeg
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - patsy
+  - matplotlib
+  - seaborn
+  - h5py
+  - openpyxl
+  - mne
+  - python-docx
+  - pip:
+      - opencv-python>=4.9,<5
+      - mediapipe==0.10.21
+      - mne-icalabel>=0.7,<1
+      - pyprep>=0.4,<1
+      - autoreject>=0.4,<1
+

@@ -1,0 +1,9 @@
+﻿path_id,candidate_route,primary_gate,best_corrected_p,passed,decision,evidence
+P1,Continuous A2/G_new/I EEG tracking,validated metric + N28 joint EEG p<.05,0.1552844715528447,False,reject as integrated EEG route; retain A2 behavior only,Stage 2.6/2.7 frozen
+P2,Editing-operation ERP dynamics,five-signal×time joint p<.05 and >=80% LOPO corrected detection,0.051294870512948704,False,reject,Stage 2.8 N28 joint cluster
+P3,Surface-versus-structural hierarchy,contrast survives same five-signal×time joint family,0.051294870512948704,False,reject,Stage 2.8 N28 joint cluster
+P4,Predefined late-window operation ERP,"8-test maxT p<.05, four-identity sign stability, and >=80% LOPO corrected detection",0.006299370062993701,True,retain as primary EEG route,Stage 2.8 N28 fixed windows
+P5,EEG–behavior individual-difference association,full-family corrected association,0.4487850851193328,False,reject,Stage 2.8 participant coefficients
+P6,EEG incremental rating prediction,nested held-out-participant improvement,0.039314731411881,False,reject; EEG worsened held-out MAE,Frozen CHB nested LOSO audit
+P7,Time-resolved factor decoding,cluster-corrected decoding,0.0519480519480519,False,reject,Frozen MVPA audit
+P8,Multimodal RSA geometry,original Gate A,,False,reject,Frozen RSA audit

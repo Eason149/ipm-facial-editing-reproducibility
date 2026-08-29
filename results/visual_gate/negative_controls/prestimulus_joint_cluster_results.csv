@@ -1,0 +1,2 @@
+﻿metric,cluster_start_ms,cluster_end_ms,duration_ms,cluster_mass_abs_t,joint_familywise_p,peak_time_ms,peak_t,peak_mean_beta_uV,n_subjects,n_permutations
+I,-60.0,-60.0,20.0,2.3752009796581537,0.44445555444455553,-60.0,-2.3752009796581537,-0.06311279423676026,29,10000

@@ -1,0 +1,41 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\title{补充材料：算法化面部编辑中输出状态与变换溯源的互补信息}
+\author{\textcolor{red}{[作者信息待补]}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{补充分析的定位}
+
+主文保留与核心论证直接相关的A2构念验证、参与者分组预测、操作层行为结果、预定义窗口EEG、完整时程以及EEG--评价边界检验。本补充材料记录未达到主路线保留门槛的测量审计与替代分析。它们不用于在多个路线中按显著性选择结论。
+
+\section{几何指标G的复现审计}
+
+在锁定的MediaPipe环境中对68张核心图像重新检测468个landmark，并沿用既有七成分公式得到$G_{new}$。$G_{new}$与旧G的一致性为Pearson $r=.666$、Spearman $\rho=.617$，平均绝对标准化差异为$.663$。该一致性未达到把G作为稳定核心构念的要求，说明其数值仍受landmark实现、标准化或旧版计算环境影响。因此，主文只将G作为A2区分效度的一项审计变量，不据此构建行为或EEG主张。
+
+\section{连续指标EEG模型}
+
+在统一28人样本中，$G_{new}$、A2和身份距离$I$同时进入0--1000 ms第一层模型，并在指标$\times$时间范围内进行联合最大簇校正。A2没有显著簇，故当前数据不支持局部面颊表面变化的连续神经追踪。该零结果也阻止把A2的行为关联解释为由已识别EEG过程传递。
+
+\section{MVPA与RSA边界分析}
+
+MVPA没有产生经簇校正的操作解码结果，Skin最接近门槛但未通过（$p=.052$）。多模态RSA未通过其预设Gate A。两项分析均作为路线边界保留，不被解释为“接近显著”的正证据，也不进入主文贡献结构。
+
+\section{推断单位与身份边界}
+
+行为混合模型和EEG符号翻转的推断单位均为参与者。同一批编辑图像被多名参与者重复观察；64张编辑图像是4个身份的条件变体，而不是64个独立身份。按参与者分组的交叉验证只检验未见参与者预测。身份遗漏分析只识别单一身份是否主导结果，不能检验从4个身份向新身份总体的泛化。
+
+\section{可重复性文件索引}
+
+完整数值与规格审计保存在Stage 2.6--2.8输出中，包括\texttt{geometric\_metric\_reproduction.md}、\texttt{analysis\_specification\_audit.md}、\texttt{eeg\_preprocessing\_protocol.md}、\texttt{eeg\_preprocessing\_evidence\_table.csv}、\texttt{a2\_behavior\_participant\_cv.csv}及预定义窗口EEG敏感性表。正式投稿时应随代码与派生统计表共同归档，并按原始图像与EEG的许可范围决定公开级别。
+
+\end{document}

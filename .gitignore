@@ -1,0 +1,63 @@
+# Protected or large inputs
+data/*
+!data/README.md
+*.cdt
+*.dap
+*.cef
+*.set
+*.fdt
+*.raw
+*.bdf
+*.edf
+*.vhdr
+*.eeg
+*.vmrk
+*.fif
+*.npz
+*.npy
+*.mat
+
+# Face images and biometric derivatives
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+landmarks_468/
+
+# Model binaries
+*.onnx
+*.pyd
+
+# Python and analysis caches
+.venv/
+.venv_*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.codex_matplotlib_cache/
+
+# Temporary analysis and local outputs
+_temporary_candidate_cache/
+.artifact_work/
+logs/
+*.log
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

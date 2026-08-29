@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "primary_sample": "N28",
+  "metric": "A2 frozen from Stage 2.6",
+  "eeg_family": [
+    "G_new",
+    "A2",
+    "I"
+  ],
+  "n_permutations": 10000,
+  "seed": 20260818,
+  "claim": "behavioral conditional association only; no stable A2 EEG tracking"
+}

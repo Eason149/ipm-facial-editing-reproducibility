@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INPUT_MAPPING_GATE",
+  "roots_audited": [
+    "${IPM_DATA_ROOT}",
+    "${IPM_STIMULUS_ROOT}"
+  ],
+  "eprime_root": "${IPM_DATA_ROOT}/EEGDATA/EEGDATA/eprime",
+  "n_logs": 30,
+  "n_records": 14040,
+  "n_unique_referenced_images": 72,
+  "complete_factorial_mapping": true,
+  "physical_formal_images_found": 64,
+  "physical_original_images_found": 4,
+  "downstream_analysis_run": false
+}

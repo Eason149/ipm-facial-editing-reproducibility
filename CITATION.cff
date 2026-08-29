@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or its derivative results, please cite the associated manuscript."
+title: "Output-State Change and Editing Provenance in Algorithmic Face Editing: Behavioral and EEG Evidence"
+type: software
+version: 0.1.0
+date-released: 2026-08-28
+authors:
+  - name: "Author details pending"
+repository-code: "https://github.com/Eason149/ipm-facial-editing-reproducibility"
+abstract: "Reproducibility code and frozen derivative outputs for behavioral and EEG analyses of algorithmic face editing."

@@ -1,0 +1,27 @@
+{
+  "n_images": 64,
+  "n_identities": 4,
+  "landmark_model": "MediaPipe Face Mesh 468",
+  "identity_model": "OpenCV SFace 2021dec with YuNet 2023mar",
+  "metric_correlations": {
+    "G": {
+      "G": 1.0,
+      "A": 0.3758750523622742,
+      "I": 0.26727199455257494
+    },
+    "A": {
+      "G": 0.3758750523622742,
+      "A": 1.0,
+      "I": 0.49331182215697256
+    },
+    "I": {
+      "G": 0.26727199455257494,
+      "A": 0.49331182215697256,
+      "I": 1.0
+    }
+  },
+  "identity_cosine_range": [
+    0.8106940545127916,
+    0.9642259500588908
+  ]
+}

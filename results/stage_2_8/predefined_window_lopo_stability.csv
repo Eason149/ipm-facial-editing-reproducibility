@@ -1,0 +1,3 @@
+﻿window,factor,primary_mean_beta,primary_p_maxT,lopo_runs,lopo_corrected_detection_count,lopo_corrected_detection_rate,lopo_sign_consistency_rate,min_abs_lopo_t,max_lopo_p_maxT
+MiddleLate_350_600,Skin,-0.278906581497578,0.015398460153984602,28,28,1.0,1.0,3.061490277767944,0.0336966303369663
+Late_600_1000,Eye,0.2884145026995332,0.006299370062993701,28,28,1.0,1.0,3.399187251359799,0.014298570142985701

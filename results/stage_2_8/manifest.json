@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "seed": 20260828,
+  "n_permutations": 10000,
+  "primary_eeg_sample": "N28 excluding s5 and s18",
+  "time_family": [
+    "FSlim",
+    "Eye",
+    "Mouth",
+    "Skin",
+    "Surface_minus_Structural"
+  ],
+  "time_range": "0-1000 ms available centers 0-980 ms",
+  "cluster_forming_threshold": "two-sided p<.05",
+  "window_family": "4 operations \u00d7 2 predefined Centroparietal windows; maximum-|t| corrected",
+  "route_selection": "all candidates recorded in candidate_route_audit.csv"
+}

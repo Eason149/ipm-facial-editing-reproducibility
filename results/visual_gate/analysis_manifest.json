@@ -1,0 +1,17 @@
+{
+  "final_gate": "B",
+  "decision": "Promising but needs stronger image metrics/validation",
+  "formal_edited_images": 64,
+  "original_images": 4,
+  "identities": 4,
+  "behavior_participants": 30,
+  "eeg_participants": 29,
+  "primary_eeg_permutations": 10000,
+  "primary_significant_clusters": [
+    {"metric": "G", "start_ms": 420, "end_ms": 580, "joint_fwe_p": 0.042195780421957804},
+    {"metric": "A", "start_ms": 440, "end_ms": 580, "joint_fwe_p": 0.046795320467953205}
+  ],
+  "identity_metric": "OpenCV SFace 2021dec; YuNet 2023mar alignment",
+  "scope": "four specific identities only",
+  "completed_stages": [1,2,3,4,5,6,7,8,9,10,11]
+}
