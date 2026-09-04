@@ -2,16 +2,16 @@
 
 This repository contains the complete analysis code, frozen derivative statistics, audit reports, manuscript figures, and Chinese LaTeX draft for the project provisionally titled:
 
-> **Output-State Change and Editing Provenance in Algorithmic Face Editing: Behavioral and EEG Evidence**
+> **A Representation--EEG--Evaluation Cascade in Algorithmic Face Editing: Selective Links and Predictive Breakdown**
 
 中文说明：本仓库保存论文主路线的数据处理脚本、冻结结果表、可重复性审计、绘图代码与LaTeX稿件。原始EEG、E-Prime记录和可识别人脸图像因许可、隐私和文件规模限制不在仓库中。
 
 ## Scope
 
-The repository distinguishes two complementary forms of visual information:
+The repository distinguishes two complementary forms of visual information and tests whether they enter a representation--EEG--evaluation cascade:
 
 1. **Output-state information**: local cheek-region surface-appearance change, operationalized by the frozen A2 metric.
-2. **Transformation-provenance information**: the editing operation and affected region (FSlim, Eye, Mouth, Skin).
+2. **Semantic operation information**: the editing operation and affected region (FSlim, Eye, Mouth, Skin).
 
 The principal inferential sample is fixed at 28 EEG participants (s5 and s18 excluded by the unified data-quality rule). Behavioral models use 30 participants. No analysis in this repository should be interpreted as prospectively preregistered or as supporting causal mediation, universal neural tracking, or new-identity generalization.
 
@@ -26,6 +26,7 @@ results/
   stage_2_6/                  sample, metric, preprocessing, and specification audits
   stage_2_7/                  frozen A2 route and participant-grouped CV
   stage_2_8/                  operation-level behavioral and EEG route
+  stage_2_9/                  frozen cascade and four-ROI sensitivity audit
   erp_dynamics/               full-time-course descriptive boundary outputs
 scripts/
   preprocessing/              Curry-to-epoch and ERP reconstruction scripts
@@ -81,7 +82,9 @@ python scripts/analysis/run_stage26_frozen_metric_models.py
 
 python scripts/analysis/run_stage27_a2_validated_route.py
 python scripts/analysis/run_stage28_ipm_route_search.py
+python scripts/analysis/run_stage29_cascade_validation.py
 python scripts/figures/build_revision_figures.py
+python scripts/figures/build_cascade_framework.py
 ```
 
 The raw Curry reconstruction is a separate, computationally intensive recovery route:
@@ -100,7 +103,9 @@ Run `--help` before computationally intensive scripts. Seeds and permutation cou
 - Skin, 350--600 ms: $\beta=-.2789\,\mu V$, familywise $p=.0154$, $d_z=-.629$.
 - Eye, 600--1000 ms: $\beta=.2884\,\mu V$, familywise $p=.0063$, $d_z=.693$.
 - Both fixed-window EEG results survived all 28 leave-one-participant-out reruns; identity-omission directions were consistent across four identities.
-- Full-time-course joint cluster tests, continuous A2 EEG, EEG--behavior association, and EEG incremental rating prediction were not supported.
+- In the simultaneous Gnew/A2/I window model, identity-space displacement I was associated with centroparietal EEG at 350--600 ms ($p_{FWE}=.00030$) and 600--1000 ms ($p_{FWE}=.0106$); Gnew and A2 were not.
+- After adjusting for all edit representations, 600--1000 ms EEG was associated with Beauty ($p_{FWE}=.0180$), but EEG did not improve nested leave-one-participant-out prediction for either rating.
+- The full-time-course joint cluster tests remained null. The evidence therefore supports selective local links, not a general, causal, or predictively sufficient cascade.
 
 The complete locked result statement is in `docs/FINAL_RESULTS_LOCK_CN.md`.
 
@@ -115,4 +120,3 @@ The complete locked result statement is in `docs/FINAL_RESULTS_LOCK_CN.md`.
 ## License and citation
 
 No license is granted for the protected human-participant data or face stimuli. A software license has intentionally not been selected pending author and institutional approval. Until then, reuse requires permission from the repository owner. Citation metadata is provided in `CITATION.cff` and should be updated when the manuscript receives a DOI.
-

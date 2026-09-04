@@ -46,6 +46,7 @@ logs/
 *.log
 
 # LaTeX build files
+*.zip
 *.aux
 *.bbl
 *.blg
@@ -60,4 +61,3 @@ logs/
 Thumbs.db
 .vscode/
 .idea/
-
